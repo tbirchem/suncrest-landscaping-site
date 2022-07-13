@@ -8,7 +8,7 @@ import { Container, Row, Col } from "reactstrap";
 function Typography() {
   return (
     <>
-      <div className="section">
+      <div className="section" >
         <Container>
           <h3 className="title">Typography</h3>
           <div id="typography">

@@ -25,6 +25,11 @@ function SignUp() {
   const [emailFocus, setEmailFocus] = React.useState(false);
   return (
     <>
+      <br/>
+      <br/>
+      <br/>
+      <h2 className="title text-center" id="getaquote"> - Get a Quote - </h2>
+      <hr/>
       <div
         className="section section-signup"
         style={{
@@ -37,7 +42,7 @@ function SignUp() {
       >
         <Container>
           <Row>
-            <Card className="card-signup" data-background-color="blue">
+            <Card className="card-signup" data-background-color="green">
               <Form action="" className="form" method="">
                 <CardHeader className="text-center">
                   <CardTitle className="title-up" tag="h3">
@@ -107,6 +112,23 @@ function SignUp() {
                     ></Input>
                   </InputGroup>
                   <InputGroup
+                      className={
+                          "no-border" + (lastFocus ? " input-group-focus" : "")
+                      }
+                  >
+                    <InputGroupAddon addonType="prepend">
+                      <InputGroupText>
+                        <i className="now-ui-icons text_caps-small"></i>
+                      </InputGroupText>
+                    </InputGroupAddon>
+                    <Input
+                        placeholder="Budget..."
+                        type="text"
+                        onFocus={() => setLastFocus(true)}
+                        onBlur={() => setLastFocus(false)}
+                    ></Input>
+                  </InputGroup>
+                  <InputGroup
                     className={
                       "no-border" + (emailFocus ? " input-group-focus" : "")
                     }
@@ -127,29 +149,29 @@ function SignUp() {
                 <CardFooter className="text-center">
                   <Button
                     className="btn-neutral btn-round"
-                    color="info"
+                    color="warning"
                     href="#pablo"
                     onClick={(e) => e.preventDefault()}
                     size="lg"
                   >
-                    Get Started
+                    Request Quote
                   </Button>
                 </CardFooter>
               </Form>
             </Card>
           </Row>
-          <div className="col text-center">
-            <Button
-              className="btn-round btn-white"
-              color="default"
-              to="/login-page"
-              outline
-              size="lg"
-              tag={Link}
-            >
-              View Login Page
-            </Button>
-          </div>
+          {/*<div className="col text-center">*/}
+          {/*  <Button*/}
+          {/*    className="btn-round btn-white"*/}
+          {/*    color="default"*/}
+          {/*    to="/login-page"*/}
+          {/*    outline*/}
+          {/*    size="lg"*/}
+          {/*    tag={Link}*/}
+          {/*  >*/}
+          {/*    View Login Page*/}
+          {/*  </Button>*/}
+          {/*</div>*/}
         </Container>
       </div>
     </>

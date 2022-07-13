@@ -2,7 +2,7 @@
 import React from "react";
 
 // reactstrap components
-import { Container } from "reactstrap";
+import {Button, Container} from "reactstrap";
 // core components
 
 function IndexHeader() {
@@ -29,27 +29,26 @@ function IndexHeader() {
               className="page-header-image"
               style={{
                 backgroundImage:
-                    "url(" + require("assets/img/header.jpg").default + ")",
+                    "url(" + require("assets/img/mthoodbackground.jpg").default + ")",
               }}
               ref={pageHeader}
           />
           <Container>
             <div className="content-center brand">
-              <img
-                  alt="..."
-                  className="n-logo"
-                  src={require("assets/img/mockLogo.png").default}
-              />
               <h1 className="h1-seo">Suncrest Landscaping</h1>
-              <h3>Exceeding expectations for 20+ years
+              <h3>
+                  <p className="index-header">Exceeding expectations for 20+ years</p>
                 <hr
                     style={{
                       background: 'white',
                       color: 'white',
                       borderColor: 'white',
-                      height: '1px',
+                      height: '0.5px',
                     }}/>
-                4.8 stars on google!
+                <p className="index-subheader">4.8 stars on
+                    <Button href="https://www.google.com/maps/place/Suncrest+Landscaping+%26+Design,+Inc./@46.336059,-122.5774749,9.18z/data=!4m5!3m4!1s0x0:0x7d779890040463c5!8m2!3d46.1134669!4d-122.367359" className="btn-link" color="warning">
+                    Google !
+                </Button></p>
               </h3>
             </div>
           </Container>

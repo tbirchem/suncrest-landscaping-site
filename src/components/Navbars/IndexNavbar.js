@@ -50,7 +50,7 @@ function IndexNavbar() {
           }}
         />
       ) : null}
-      <Navbar className={"fixed-top " + navbarColor} expand="lg" color="info">
+      <Navbar className={"fixed-top " + navbarColor} expand="lg" color="success">
         <Container>
           <div className="navbar-translate">
             <NavbarBrand
@@ -58,11 +58,8 @@ function IndexNavbar() {
               target="_blank"
               id="navbar-brand"
             >
-              Now UI Kit React
+              Suncrest Landscaping
             </NavbarBrand>
-            <UncontrolledTooltip target="#navbar-brand">
-              Designed by Invision. Coded by Creative Tim
-            </UncontrolledTooltip>
             <button
               className="navbar-toggler navbar-toggler"
               onClick={() => {
@@ -72,9 +69,9 @@ function IndexNavbar() {
               aria-expanded={collapseOpen}
               type="button"
             >
-              <span className="navbar-toggler-bar top-bar"></span>
-              <span className="navbar-toggler-bar middle-bar"></span>
-              <span className="navbar-toggler-bar bottom-bar"></span>
+              <span className="navbar-toggler-bar top-bar"/>
+              <span className="navbar-toggler-bar middle-bar"/>
+              <span className="navbar-toggler-bar bottom-bar"/>
             </button>
           </div>
           <Collapse
@@ -85,61 +82,59 @@ function IndexNavbar() {
             <Nav navbar>
               <NavItem>
                 <NavLink
+                    href="#pablo"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document
+                          .getElementById("basic-elements")
+                          .scrollIntoView();
+                    }}>
+                  <p>About</p>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
                   href="#pablo"
                   onClick={(e) => {
                     e.preventDefault();
                     document
-                      .getElementById("download-section")
+                      .getElementById("menu-dropdown")
                       .scrollIntoView();
-                  }}
-                >
-                  <i className="now-ui-icons arrows-1_cloud-download-93"></i>
-                  <p>Download</p>
+                  }}>
+                  <p>Services</p>
                 </NavLink>
-              </NavItem>
-              <UncontrolledDropdown nav>
-                <DropdownToggle
-                  caret
-                  color="default"
-                  href="#pablo"
-                  nav
-                  onClick={(e) => e.preventDefault()}
-                >
-                  <i className="now-ui-icons design_app mr-1"></i>
-                  <p>Components</p>
-                </DropdownToggle>
-                <DropdownMenu>
-                  <DropdownItem to="/index" tag={Link}>
-                    <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
-                    All components
-                  </DropdownItem>
-                  <DropdownItem
-                    href="https://demos.creative-tim.com/now-ui-kit-react/#/documentation/introduction?ref=nukr-index-navbar"
-                    target="_blank"
-                  >
-                    <i className="now-ui-icons design_bullet-list-67 mr-1"></i>
-                    Documentation
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-              <NavItem>
-                <Button
-                  className="nav-link btn-neutral"
-                  color="info"
-                  href="https://www.creative-tim.com/product/now-ui-kit-pro-react?ref=nukr-index-navbar"
-                  id="upgrade-to-pro"
-                  target="_blank"
-                >
-                  <i className="now-ui-icons arrows-1_share-66 mr-1"></i>
-                  <p>Upgrade to PRO</p>
-                </Button>
-                <UncontrolledTooltip target="#upgrade-to-pro">
-                  Cooming soon!
-                </UncontrolledTooltip>
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="https://twitter.com/CreativeTim?ref=creativetim"
+                    href="#pablo"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document
+                          .getElementById("carousel")
+                          .scrollIntoView({
+                            inline: 'start',
+                            block: 'start',
+                            behavior: 'smooth'
+                          });
+                    }}>
+                  <p>Gallery</p>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                    href="#pablo"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document
+                          .getElementById("download-section")
+                          .scrollIntoView();
+                    }}>
+                  <p>Get a quote</p>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  href="https://twitter.com/fenwayfan24"
                   target="_blank"
                   id="twitter-tooltip"
                 >
@@ -152,7 +147,7 @@ function IndexNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="https://www.facebook.com/CreativeTim?ref=creativetim"
+                  href="https://www.facebook.com/profile.php?id=100057352882324"
                   target="_blank"
                   id="facebook-tooltip"
                 >
@@ -165,7 +160,7 @@ function IndexNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+                  href="https://www.instagram.com/birchem_24/"
                   target="_blank"
                   id="instagram-tooltip"
                 >

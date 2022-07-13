@@ -26,7 +26,6 @@ function Tabs() {
         <Container>
           <Row>
             <Col className="ml-auto mr-auto" md="10" xl="6">
-              <p className="category">Tabs with Icons on Card</p>
               <Card>
                 <CardHeader>
                   <Nav className="justify-content-center" role="tablist" tabs>
@@ -39,47 +38,8 @@ function Tabs() {
                           setIconPills("1");
                         }}
                       >
-                        <i className="now-ui-icons objects_umbrella-13"></i>
-                        Home
-                      </NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink
-                        className={iconPills === "2" ? "active" : ""}
-                        href="#pablo"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          setIconPills("2");
-                        }}
-                      >
-                        <i className="now-ui-icons shopping_cart-simple"></i>
-                        Profile
-                      </NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink
-                        className={iconPills === "3" ? "active" : ""}
-                        href="#pablo"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          setIconPills("3");
-                        }}
-                      >
-                        <i className="now-ui-icons shopping_shop"></i>
-                        Messages
-                      </NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink
-                        className={iconPills === "4" ? "active" : ""}
-                        href="#pablo"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          setIconPills("4");
-                        }}
-                      >
-                        <i className="now-ui-icons ui-2_settings-90"></i>
-                        Settings
+                        <i className="now-ui-icons objects_umbrella-13"/>
+                        Water Features
                       </NavLink>
                     </NavItem>
                   </Nav>
@@ -101,19 +61,35 @@ function Tabs() {
                         the nucleus.
                       </p>
                     </TabPane>
-                    <TabPane tabId="iconPills2">
-                      <p>
-                        I will be the leader of a company that ends up being
-                        worth billions of dollars, because I got the answers. I
-                        understand culture. I am the nucleus. I think that’s a
-                        responsibility that I have, to push possibilities, to
-                        show people, this is the level that things could be at.
-                        I think that’s a responsibility that I have, to push
-                        possibilities, to show people, this is the level that
-                        things could be at.
-                      </p>
-                    </TabPane>
-                    <TabPane tabId="iconPills3">
+                  </TabContent>
+                </CardBody>
+              </Card>
+            </Col>
+            <Col className="ml-auto mr-auto" md="10" xl="6">
+              <Card>
+                <CardHeader>
+                  <Nav className="justify-content-center" role="tablist" tabs>
+                    <NavItem>
+                      <NavLink
+                          className={iconPills === "2" ? "active" : ""}
+                          href="#pablo"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            setIconPills("1");
+                          }}
+                      >
+                        <i className="now-ui-icons ui-2_settings-90"/>
+                        Landscape Design
+                      </NavLink>
+                    </NavItem>
+                  </Nav>
+                </CardHeader>
+                <CardBody>
+                  <TabContent
+                      className="text-center"
+                      activeTab={"iconPills" + iconPills}
+                  >
+                    <TabPane tabId="iconPills1">
                       <p>
                         I think that’s a responsibility that I have, to push
                         possibilities, to show people, this is the level that
@@ -123,15 +99,6 @@ function Tabs() {
                         company that ends up being worth billions of dollars,
                         because I got the answers. I understand culture. I am
                         the nucleus.
-                      </p>
-                    </TabPane>
-                    <TabPane tabId="iconPills4">
-                      <p>
-                        "I will be the leader of a company that ends up being
-                        worth billions of dollars, because I got the answers. I
-                        understand culture. I am the nucleus. I think that’s a
-                        responsibility that I have, to push possibilities, to
-                        show people, this is the level that things could be at."
                       </p>
                     </TabPane>
                   </TabContent>
@@ -139,71 +106,30 @@ function Tabs() {
               </Card>
             </Col>
             <Col className="ml-auto mr-auto" md="10" xl="6">
-              <p className="category">Tabs with Background on Card</p>
               <Card>
                 <CardHeader>
-                  <Nav
-                    className="nav-tabs-neutral justify-content-center"
-                    data-background-color="blue"
-                    role="tablist"
-                    tabs
-                  >
+                  <Nav className="justify-content-center" role="tablist" tabs>
                     <NavItem>
                       <NavLink
-                        className={pills === "1" ? "active" : ""}
-                        href="#pablo"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          setPills("1");
-                        }}
+                          className={iconPills === "2" ? "active" : ""}
+                          href="#pablo"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            setIconPills("1");
+                          }}
                       >
-                        Home
-                      </NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink
-                        className={pills === "2" ? "active" : ""}
-                        href="#pablo"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          setPills("2");
-                        }}
-                      >
-                        Profile
-                      </NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink
-                        className={pills === "3" ? "active" : ""}
-                        href="#pablo"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          setPills("3");
-                        }}
-                      >
-                        Messages
-                      </NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink
-                        className={pills === "4" ? "active" : ""}
-                        href="#pablo"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          setPills("4");
-                        }}
-                      >
-                        Settings
+                        <i className="now-ui-icons ui-2_settings-90"/>
+                        Commercial
                       </NavLink>
                     </NavItem>
                   </Nav>
                 </CardHeader>
                 <CardBody>
                   <TabContent
-                    className="text-center"
-                    activeTab={"pills" + pills}
+                      className="text-center"
+                      activeTab={"iconPills" + iconPills}
                   >
-                    <TabPane tabId="pills1">
+                    <TabPane tabId="iconPills1">
                       <p>
                         I think that’s a responsibility that I have, to push
                         possibilities, to show people, this is the level that
@@ -215,19 +141,35 @@ function Tabs() {
                         the nucleus.
                       </p>
                     </TabPane>
-                    <TabPane tabId="pills2">
-                      <p>
-                        I will be the leader of a company that ends up being
-                        worth billions of dollars, because I got the answers. I
-                        understand culture. I am the nucleus. I think that’s a
-                        responsibility that I have, to push possibilities, to
-                        show people, this is the level that things could be at.
-                        I think that’s a responsibility that I have, to push
-                        possibilities, to show people, this is the level that
-                        things could be at.
-                      </p>
-                    </TabPane>
-                    <TabPane tabId="pills3">
+                  </TabContent>
+                </CardBody>
+              </Card>
+            </Col>
+            <Col className="ml-auto mr-auto" md="10" xl="6">
+              <Card>
+                <CardHeader>
+                  <Nav className="justify-content-center" role="tablist" tabs>
+                    <NavItem>
+                      <NavLink
+                          className={iconPills === "1" ? "active" : ""}
+                          href="#pablo"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            setIconPills("1");
+                          }}
+                      >
+                        <i className="now-ui-icons ui-2_settings-90"/>
+                        Outdoor Structures
+                      </NavLink>
+                    </NavItem>
+                  </Nav>
+                </CardHeader>
+                <CardBody>
+                  <TabContent
+                      className="text-center"
+                      activeTab={"iconPills" + iconPills}
+                  >
+                    <TabPane tabId="iconPills1">
                       <p>
                         I think that’s a responsibility that I have, to push
                         possibilities, to show people, this is the level that
@@ -237,15 +179,6 @@ function Tabs() {
                         company that ends up being worth billions of dollars,
                         because I got the answers. I understand culture. I am
                         the nucleus.
-                      </p>
-                    </TabPane>
-                    <TabPane tabId="pills4">
-                      <p>
-                        "I will be the leader of a company that ends up being
-                        worth billions of dollars, because I got the answers. I
-                        understand culture. I am the nucleus. I think that’s a
-                        responsibility that I have, to push possibilities, to
-                        show people, this is the level that things could be at."
                       </p>
                     </TabPane>
                   </TabContent>

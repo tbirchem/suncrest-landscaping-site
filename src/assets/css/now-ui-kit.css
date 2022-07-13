@@ -2561,7 +2561,7 @@ p {
   .title.title-up {
     text-transform: uppercase; }
     .title.title-up a {
-      color: #2c2c2c;
+      color: #121416;
       text-decoration: none; }
   .title + .category {
     margin-top: -25px; }
@@ -2575,7 +2575,7 @@ p {
 .category {
   text-transform: capitalize;
   font-weight: 700;
-  color: #9A9A9A; }
+  color: #121416; }
 
 .text-primary {
   color: #f96332 !important; }
@@ -3910,7 +3910,7 @@ img {
 
 .card-signup {
   max-width: 350px;
-  margin: 0 auto; }
+  margin: 0 auto;}
   .card-signup .card-header {
     margin: 0 20px;
     padding: 30px 0; }

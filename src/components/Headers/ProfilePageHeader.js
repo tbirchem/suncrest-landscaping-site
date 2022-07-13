@@ -28,16 +28,16 @@ function ProfilePageHeader() {
         filter-color="blue"
       >
         <div
-          className="page-header-image"
-          style={{
-            backgroundImage:
-              "url(" + require("assets/img/bg5.jpg").default + ")",
-          }}
-          ref={pageHeader}
-        ></div>
+    className="page-header-image"
+    style={{
+      backgroundImage:
+          "url(" + require("assets/img/bg5.jpg").default + ")",
+    }}
+    ref={pageHeader}
+    />
         <Container>
           <div className="photo-container">
-            <img alt="..." src={require("assets/img/ryan.jpg").default}></img>
+            <img alt="..." src={require("assets/img/ryan.jpg").default}/>
           </div>
           <h3 className="title">Ryan Scheinder</h3>
           <p className="category">Photographer</p>
