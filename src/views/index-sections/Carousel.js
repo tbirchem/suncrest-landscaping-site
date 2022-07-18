@@ -97,7 +97,7 @@ function CarouselSection() {
                   }}
                   role="button"
                 >
-                  <i className="now-ui-icons arrows-1_minimal-left"></i>
+                  <i className="now-ui-icons arrows-1_minimal-left"/>
                 </a>
                 <a
                   className="carousel-control-next"
@@ -109,12 +109,16 @@ function CarouselSection() {
                   }}
                   role="button"
                 >
-                  <i className="now-ui-icons arrows-1_minimal-right"></i>
+                  <i className="now-ui-icons arrows-1_minimal-right"/>
                 </a>
               </Carousel>
             </Col>
           </Row>
         </Container>
+        <br/>
+        <br/>
+        <br/>
+        <hr/>
       </div>
     </>
   );

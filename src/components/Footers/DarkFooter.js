@@ -18,19 +18,10 @@ function DarkFooter() {
                 Suncrest Landscaping & Design inc.
               </a>
             </li>
-
           </ul>
         </nav>
         <div className="copyright" id="copyright">
-          © {new Date().getFullYear()}, Designed by{" "}
-          <a
-            href="https://www.invisionapp.com?ref=nukr-dark-footer"
-            target="_blank"
-          >
-            Invision
-          </a>
-          . Coded by{" Taylor Birchem "}
-          .
+          CONTACT US: TAYLOR.BIRCHEM@ICLOUD.COM
         </div>
       </Container>
     </footer>

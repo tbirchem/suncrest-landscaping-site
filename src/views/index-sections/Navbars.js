@@ -2,19 +2,19 @@ import React from "react";
 
 // reactstrap components
 import {
-  Collapse,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  UncontrolledDropdown,
-  NavbarBrand,
-  Navbar,
-  NavItem,
-  NavLink,
-  Nav,
+  // Collapse,
+  // DropdownToggle,
+  // DropdownMenu,
+  // DropdownItem,
+  // UncontrolledDropdown,
+  // NavbarBrand,
+  // Navbar,
+  // NavItem,
+  // NavLink,
+  // Nav,
   Container,
-  Row,
-  Col,
+  // Row,
+  // Col,
 } from "reactstrap";
 
 // core components
@@ -33,8 +33,8 @@ function Navbars() {
               backgroundImage:
                 "url(" + require("assets/img/bg7.jpg").default + ")",
             }}
-          >
-          </div>
+          />
+
           </div>
       </div>
     </>

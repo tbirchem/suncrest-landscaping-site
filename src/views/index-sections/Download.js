@@ -8,29 +8,27 @@ import { Button, Container, Row, Col, UncontrolledTooltip } from "reactstrap";
 function Download() {
   return (
     <>
+
       <div
         className="section section-download"
         data-background-color="black"
         id="download-section"
       >
         <Container>
-          <br/>
-          <br></br>
-          <br></br>
           <Row className="justify-content-md-center sharing-area text-center">
             <Col className="text-center" lg="8" md="12">
-              <h3>Thank you for supporting us!</h3>
+              <h3>Follow Us!</h3>
             </Col>
             <Col className="text-center" lg="8" md="12">
               <Button
                 className="btn-neutral btn-icon btn-round"
-                color="twitter"
-                href="https://twitter.com/fenwayfan24"
+                color="Instagram"
+                href="https://instagram.com/birchem_24"
                 id="tooltip86114138"
                 size="lg"
                 target="_blank"
               >
-                <i className="fab fa-twitter"></i>
+                <i className="fab fa-instagram"></i>
               </Button>
               <UncontrolledTooltip delay={0} target="tooltip86114138">
                 Follow us
@@ -46,7 +44,7 @@ function Download() {
                 <i className="fab fa-facebook-square"></i>
               </Button>
               <UncontrolledTooltip delay={0} target="tooltip735272548">
-                Like us
+                Follow us
               </UncontrolledTooltip>
               <Button
                 className="btn-neutral btn-icon btn-round"

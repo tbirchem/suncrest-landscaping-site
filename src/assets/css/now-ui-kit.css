@@ -2555,14 +2555,19 @@ p {
   font-weight: 300;
   font-size: 1.2em; }
 
+
+
 .title {
   font-weight: 700;
-  padding-top: 30px; }
+  padding-top: 30px;
+}
   .title.title-up {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+  }
     .title.title-up a {
       color: #121416;
-      text-decoration: none; }
+      text-decoration: none;
+    }
   .title + .category {
     margin-top: -25px; }
 
@@ -2700,7 +2705,8 @@ body {
   float: right; }
 
 .title-up {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 .nav-pills.nav-pills-just-icons .nav-item .nav-link {
   text-align: center;
@@ -3908,6 +3914,8 @@ img {
     width: 100%;
     left: 0; }
 
+
+
 .card-signup {
   max-width: 350px;
   margin: 0 auto;}
@@ -3985,6 +3993,17 @@ img {
 
 .landing-page .section-contact-us .description {
   margin-bottom: 30px; }
+
+.App {
+  text-align: center;
+  max-width: 300px;
+  margin: 20px auto;
+}
+Form {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 20px;
+}
 
 .landing-page .section-contact-us .input-group,
 .landing-page .section-contact-us .send-button,
@@ -4219,7 +4238,8 @@ img {
   height: 100vh; }
 
 .section-signup {
-  padding-top: 20vh; }
+  padding-top: 20vh;
+}
 
 .page-header {
   min-height: 100vh;

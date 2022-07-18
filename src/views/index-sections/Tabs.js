@@ -19,7 +19,6 @@ import {
 
 function Tabs() {
   const [iconPills, setIconPills] = React.useState("1");
-  const [pills, setPills] = React.useState("1");
   return (
     <>
       <div className="section section-tabs">
@@ -31,7 +30,7 @@ function Tabs() {
                   <Nav className="justify-content-center" role="tablist" tabs>
                     <NavItem>
                       <NavLink
-                        className={iconPills === "1" ? "active" : ""}
+                        className={iconPills === "2" ? "active" : ""}
                         href="#pablo"
                         onClick={(e) => {
                           e.preventDefault();
@@ -60,6 +59,16 @@ function Tabs() {
                         because I got the answers. I understand culture. I am
                         the nucleus.
                       </p>
+                      <br/>
+                      <br/>
+                      <div
+                          style={{
+                            backgroundImage:
+                                "url(" + require("assets/img/bg11.jpg").default + ")",
+                            backgroundSize: "cover",
+                            backgroundPosition: "center",
+                            minHeight: "250px",
+                          }}/>
                     </TabPane>
                   </TabContent>
                 </CardBody>
@@ -100,6 +109,16 @@ function Tabs() {
                         because I got the answers. I understand culture. I am
                         the nucleus.
                       </p>
+                      <br/>
+                      <br/>
+                      <div
+                      style={{
+                      backgroundImage:
+                          "url(" + require("assets/img/bg11.jpg").default + ")",
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                      minHeight: "250px",
+                    }}/>
                     </TabPane>
                   </TabContent>
                 </CardBody>
@@ -140,6 +159,16 @@ function Tabs() {
                         because I got the answers. I understand culture. I am
                         the nucleus.
                       </p>
+                      <br/>
+                      <br/>
+                      <div
+                          style={{
+                            backgroundImage:
+                                "url(" + require("assets/img/bg11.jpg").default + ")",
+                            backgroundSize: "cover",
+                            backgroundPosition: "center",
+                            minHeight: "250px",
+                          }}/>
                     </TabPane>
                   </TabContent>
                 </CardBody>
@@ -151,7 +180,7 @@ function Tabs() {
                   <Nav className="justify-content-center" role="tablist" tabs>
                     <NavItem>
                       <NavLink
-                          className={iconPills === "1" ? "active" : ""}
+                          className={iconPills === "2" ? "active" : ""}
                           href="#pablo"
                           onClick={(e) => {
                             e.preventDefault();
@@ -180,6 +209,16 @@ function Tabs() {
                         because I got the answers. I understand culture. I am
                         the nucleus.
                       </p>
+                      <br/>
+                      <br/>
+                      <div
+                          style={{
+                            backgroundImage:
+                                "url(" + require("assets/img/bg11.jpg").default + ")",
+                            backgroundSize: "cover",
+                            backgroundPosition: "center",
+                            minHeight: "250px",
+                          }}/>
                     </TabPane>
                   </TabContent>
                 </CardBody>
